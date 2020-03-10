@@ -27,16 +27,10 @@ collections:
     folder: '_pages/fr'
     sort: "title:asc"
     create: true
+    permalink: /fr/:title
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Titre", name: "title", widget: "string", tagname: "h1"}
       - {label: "Adresse pour la traduction", name: "trans_url", widget: "string"}
       - {label: "Lang", name: "lang", widget: "hidden", default: "en"}
       - {label: "Corps du texte", name: "body", widget: "markdown", required: true}
-      - label: "Translation url"
-        name: "trans_url"
-        widget: "relation"
-        collection: "docEn"
-        searchFields: ["title"]
-        valueField: "title"
-        displayFields: ["title"]
