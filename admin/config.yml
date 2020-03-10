@@ -1,0 +1,20 @@
+# config.yml
+
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: 'assets/img'
+collections:
+  - name: 'docEn'
+    label: 'Documentation - EN'
+    folder: '_pages/en'
+    sort: "title:asc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Permalink", name: "permalink", widget: "hidden"}
+      - {label: "Translation url", name: "trans_url", widget: "string"}
+      - {label: "Lang", name: "lang", widget: "hidden", default: "en"}
+      - {label: "Body", name: "body", widget: "text", required: true}
