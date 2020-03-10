@@ -14,7 +14,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Permalink", name: "permalink", widget: "hidden", default: "/en/:title"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "{{title}}"}
       - {label: "Translation url", name: "trans_url", widget: "string"}
       - {label: "Lang", name: "lang", widget: "hidden", default: "en"}
       - {label: "Body", name: "body", widget: "markdown", required: true}
