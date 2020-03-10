@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>
       
-        For developers - VAC Benefits Directory
+        For developers - Find benefits and services
       
     </title>
     <meta name="viewport" content="width=device-width">
@@ -91,8 +91,8 @@
   <li>Install the development environment
     <ul>
       <li><a href="https://brew.sh/">Homebrew</a></li>
-      <li>node (<code class="highlighter-rouge">brew install node</code>)</li>
-      <li>yarn (<code class="highlighter-rouge">npm i yarn</code>)</li>
+      <li>node (<code class="language-plaintext highlighter-rouge">brew install node</code>)</li>
+      <li>yarn (<code class="language-plaintext highlighter-rouge">npm i yarn</code>)</li>
     </ul>
   </li>
 </ul>
@@ -104,10 +104,10 @@
   <li>To set up your newly installed Node command line tools such as npm globally:
     <ul>
       <li>Start menu &gt; Control Panel &gt; User accounts &gt; user accounts &gt; change my environment variables &gt; select path &gt; Edit</li>
-      <li>Now enter the location where you have Node installed with a ; to separate between any other entries here. For example: <code class="highlighter-rouge">C:\dev ; C:\Node</code></li>
+      <li>Now enter the location where you have Node installed with a ; to separate between any other entries here. For example: <code class="language-plaintext highlighter-rouge">C:\dev ; C:\Node</code></li>
     </ul>
   </li>
-  <li>Run <code class="highlighter-rouge">npm install -g yarn</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">npm install -g yarn</code></li>
 </ul>
 
 <h2 id="running-the-app">Running the App</h2>
@@ -115,15 +115,15 @@
 <ul>
   <li>Clone the repo
     <ul>
-      <li><code class="highlighter-rouge">git clone git@github.com:cds-snc/find-benefits-and-services.git</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git clone git@github.com:cds-snc/find-benefits-and-services.git</code></li>
     </ul>
   </li>
   <li>Change directories to /find-benefits-and-services:
     <ul>
-      <li><code class="highlighter-rouge">yarn install</code></li>
-      <li><code class="highlighter-rouge">yarn dev</code></li>
+      <li><code class="language-plaintext highlighter-rouge">yarn install</code></li>
+      <li><code class="language-plaintext highlighter-rouge">yarn dev</code></li>
       <li>If you run into syntax errors chances are there are missing packages/dependencies and you may want to try
-running a clean yarn install. Delete node_modules folder and then re run <code class="highlighter-rouge">yarn install</code> in the main folder.</li>
+running a clean yarn install. Delete node_modules folder and then re run <code class="language-plaintext highlighter-rouge">yarn install</code> in the main folder.</li>
     </ul>
   </li>
   <li>Now visit http://localhost:3000/ in your web browser and you should see an app that looks like <a href="http://benefits-avantages.cds-snc.ca">this</a>. Any changes you now make to your local version of the source code will be reflected on your localhost.</li>
@@ -158,22 +158,22 @@ running a clean yarn install. Delete node_modules folder and then re run <code c
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">AIRTABLE_READ_KEY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">AIRTABLE_READ_KEY</code></td>
       <td>Load data (benefits / translations / etc) from Airtable. This value is your API Key for your account on Airtable. To generate this key, visit your <a href="https://Airtable.com/account">account page</a> and click on the “Generate my API key”</td>
       <td>yes</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">AIRTABLE_BASE_KEY</code></td>
-      <td>This tells the app which Airtable base to pull data from. To locate this key, visit your Airtable base and click: help &gt; API documentation. Then copy the base key from your current URL, which will have the format: <code class="highlighter-rouge">https://airtable.com/AIRTABLE_BASE_KEY/api/docs</code></td>
+      <td><code class="language-plaintext highlighter-rouge">AIRTABLE_BASE_KEY</code></td>
+      <td>This tells the app which Airtable base to pull data from. To locate this key, visit your Airtable base and click: help &gt; API documentation. Then copy the base key from your current URL, which will have the format: <code class="language-plaintext highlighter-rouge">https://airtable.com/AIRTABLE_BASE_KEY/api/docs</code></td>
       <td>yes</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">USE_AIRTABLE</code></td>
-      <td><code class="highlighter-rouge">true</code> = pull data directly from Airtable, <code class="highlighter-rouge">false</code> = pull data from <a href="https://github.com/cds-snc/find-benefits-and-services/blob/master/data.json">data.json</a></td>
+      <td><code class="language-plaintext highlighter-rouge">USE_AIRTABLE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">true</code> = pull data directly from Airtable, <code class="language-plaintext highlighter-rouge">false</code> = pull data from <a href="https://github.com/cds-snc/find-benefits-and-services/blob/master/data.json">data.json</a></td>
       <td>yes</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">AIRTABLE_WRITE_KEY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">AIRTABLE_WRITE_KEY</code></td>
       <td>Write feedback form data to Airtable. If the API key for your account has write permissions to your Airtable base, you can use the same value for this variable.</td>
       <td>only if you want the feedback feature to work</td>
     </tr>
@@ -183,11 +183,11 @@ running a clean yarn install. Delete node_modules folder and then re run <code c
 <h3 id="adding-a-new-environment-locally-os-x">Adding a new environment locally (OS X)</h3>
 
 <ol>
-  <li>In the terminal, run: <code class="highlighter-rouge">nano ~/.bash_profile</code> (or <code class="highlighter-rouge">nano ~/.zshrc</code> if you’re using the zsh shell)</li>
-  <li>Add the following line: <code class="highlighter-rouge">export AIRTABLE_READ_KEY="foo"</code></li>
-  <li>[ctrl] + x, and type <code class="highlighter-rouge">y</code> to save</li>
-  <li><code class="highlighter-rouge">source ~/.bash_profile</code> (or <code class="highlighter-rouge">source ~/.zshrc</code>)</li>
-  <li><code class="highlighter-rouge">echo $AIRTABLE_READ_KEY</code> to make sure it is set</li>
+  <li>In the terminal, run: <code class="language-plaintext highlighter-rouge">nano ~/.bash_profile</code> (or <code class="language-plaintext highlighter-rouge">nano ~/.zshrc</code> if you’re using the zsh shell)</li>
+  <li>Add the following line: <code class="language-plaintext highlighter-rouge">export AIRTABLE_READ_KEY="foo"</code></li>
+  <li>[ctrl] + x, and type <code class="language-plaintext highlighter-rouge">y</code> to save</li>
+  <li><code class="language-plaintext highlighter-rouge">source ~/.bash_profile</code> (or <code class="language-plaintext highlighter-rouge">source ~/.zshrc</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">echo $AIRTABLE_READ_KEY</code> to make sure it is set</li>
 </ol>
 
 <p>Repeat these steps for each of the 4 environment variables in the table above.</p>
@@ -196,8 +196,8 @@ running a clean yarn install. Delete node_modules folder and then re run <code c
 
 <ol>
   <li>Visit: Start Menu &gt; Control Panel &gt; User Accounts &gt; User Accounts &gt; Change my environment variables &gt; New…</li>
-  <li>Add a variable called <code class="highlighter-rouge">AIRTABLE_READ_KEY</code></li>
-  <li>Restart the Command Prompt, run <code class="highlighter-rouge">echo %AIRTABLE_READ_KEY%</code> to check if the new varaible exists</li>
+  <li>Add a variable called <code class="language-plaintext highlighter-rouge">AIRTABLE_READ_KEY</code></li>
+  <li>Restart the Command Prompt, run <code class="language-plaintext highlighter-rouge">echo %AIRTABLE_READ_KEY%</code> to check if the new varaible exists</li>
 </ol>
 
 <p>Repeat these steps for each of the 4 environment variables in the table above.</p>
@@ -205,7 +205,7 @@ running a clean yarn install. Delete node_modules folder and then re run <code c
 <h2 id="make-a-content-change-using-airtable">Make a content change using Airtable</h2>
 
 <ul>
-  <li>run <code class="highlighter-rouge">yarn dev</code></li>
+  <li>run <code class="language-plaintext highlighter-rouge">yarn dev</code></li>
   <li>visit http://localhost:3000/</li>
 </ul>
 
@@ -225,8 +225,8 @@ running a clean yarn install. Delete node_modules folder and then re run <code c
 <p>You can now start customizing the content in the app to suite your use case. Our <a href="/for-content-managers">guide to changing content</a> will help you get started with that. Note that there are two options for loading content into your app going forward:</p>
 
 <ol>
-  <li>Load content and logic directly from your Airtable base (<code class="highlighter-rouge">USE_AIRTABLE = "true"</code>). This is great for development and quickly seeing your changes in the live app.</li>
-  <li>Load content from <a href="https://github.com/cds-snc/find-benefits-and-services/blob/master/data.json">data.json</a>. This is a good option when your app is live and and content changes may be less frequent and require more peer review. To choose this option, remove the <code class="highlighter-rouge">USE_Airtable</code> environment variable from your environment. To make a pull new content into the app, run <code class="highlighter-rouge">yarn download</code>. This copies the most recent Airtable data to <a href="https://github.com/cds-snc/find-benefits-and-services/blob/master/data/data.json">data.json</a>.</li>
+  <li>Load content and logic directly from your Airtable base (<code class="language-plaintext highlighter-rouge">USE_AIRTABLE = "true"</code>). This is great for development and quickly seeing your changes in the live app.</li>
+  <li>Load content from <a href="https://github.com/cds-snc/find-benefits-and-services/blob/master/data.json">data.json</a>. This is a good option when your app is live and and content changes may be less frequent and require more peer review. To choose this option, remove the <code class="language-plaintext highlighter-rouge">USE_Airtable</code> environment variable from your environment. To make a pull new content into the app, run <code class="language-plaintext highlighter-rouge">yarn download</code>. This copies the most recent Airtable data to <a href="https://github.com/cds-snc/find-benefits-and-services/blob/master/data/data.json">data.json</a>.</li>
 </ol>
 
 <h2 id="what-if-i-dont-want-to-use-airtable">What if I don’t want to use Airtable?</h2>
