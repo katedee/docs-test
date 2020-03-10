@@ -22,7 +22,7 @@ collections:
         collection: "docFr"
         searchFields: ["title"]
         valueField: "title"
-        displayFields: ["title", "permalink"]
+        displayFields: ["title", "permalink", "{{slug}}"]
   - name: 'docFr'
     label: 'Documentation - FR'
     folder: '_pages/fr'
