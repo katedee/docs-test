@@ -10,7 +10,7 @@ collections:
     folder: '_pages/en'
     sort: "title:asc"
     create: true
-    slug: "{{slug}}"
+    permalink: /en/:title
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
@@ -22,7 +22,7 @@ collections:
         collection: "docFr"
         searchFields: ["title"]
         valueField: "title"
-        displayFields: ["title", "permalink", "{{slug}}"]
+        displayFields: ["title", "permalink"]
   - name: 'docFr'
     label: 'Documentation - FR'
     folder: '_pages/fr'
