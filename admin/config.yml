@@ -28,7 +28,7 @@ collections:
     folder: '_pages/fr'
     sort: "title:asc"
     create: true
-    slug: "{{slug}}"
+    permalink: /fr/:title
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Titre", name: "title", widget: "string", tagname: "h1"}
