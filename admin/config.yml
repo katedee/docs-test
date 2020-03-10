@@ -31,7 +31,7 @@ collections:
     permalink: /fr/:title
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Permalink", name: "layout", widget: "hidden", default: "{{permalink}}"}
+      - {label: "Permalink", name: "layout", widget: "hidden"}
       - {label: "Titre", name: "title", widget: "string", tagname: "h1"}
       - {label: "Adresse pour la traduction", name: "trans_url", widget: "string"}
       - {label: "Lang", name: "lang", widget: "hidden", default: "en"}
