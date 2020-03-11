@@ -12,3 +12,5 @@ This is written by Kate
 This is also another sentence by Kate
 
 Get outta here Paul
+
+![it's my window](/assets/img/20191118_082523_hdr.jpg "Kate's window")
