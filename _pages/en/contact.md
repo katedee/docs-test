@@ -10,3 +10,5 @@ If you have questions or feedback about the product, please open an issue in the
 This is written by Kate
 
 This is also another sentence by Kate
+
+Get outta here Paul
