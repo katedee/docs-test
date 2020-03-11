@@ -59,8 +59,8 @@ collections:
     folder: "_menu"
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
-      - label: "Menu List"
-        name: "menuList"
+      - label: "Menu Items"
+        name: "menuItems"
         widget: "list"
         fields: 
           - name: "menuItem"
