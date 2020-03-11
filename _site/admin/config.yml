@@ -3,16 +3,16 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: 'assets/img'
+media_folder: "assets/img"
 collections:
-  - name: 'docEn'
-    label: 'Documentation - EN'
-    folder: '_pages/en'
+  - name: "docEn"
+    label: "Documentation - EN"
+    folder: "pages/_en"
     sort: "title:asc"
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Lang", name: "lang", widget: "hidden", default: "en"}
       - {label: "Body", name: "body", widget: "markdown", required: true}
       - label: "Translation url"
@@ -22,15 +22,48 @@ collections:
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title"]
-  - name: 'docFr'
-    label: 'Documentation - FR'
-    folder: '_pages/fr'
+      - label: "Parent page"
+        name: "parentPage"
+        widget: "relation"
+        collection: "docEn"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+  - name: "docFr"
+    label: "Documentation - FR"
+    folder: "pages/_fr"
     sort: "title:asc"
     create: true
-    permalink: /fr/:title
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Titre", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Adresse pour la traduction", name: "trans_url", widget: "string"}
-      - {label: "Lang", name: "lang", widget: "hidden", default: "en"}
+      - {label: "Titre", name: "title", widget: "string", tagname: "h1", require: true}
+      - {label: "Lang", name: "lang", widget: "hidden", default: "fr"}
       - {label: "Corps du texte", name: "body", widget: "markdown", required: true}
+      - label: "Traduction en anglais"
+        name: "trans_url"
+        widget: "relation"
+        collection: "docEn"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+      - label: "Parent page"
+        name: "parentPage"
+        widget: "relation"
+        collection: "docFr"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+  - name: "menuOrder"
+    label: "Menu Order"
+    folder: "_menu"
+    widget: "list"
+    fields: 
+      - name: "menuItem"
+        label: "menu item"
+        widget: "relation"
+        collection: "docEn"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title", "trans_url"]
+
+

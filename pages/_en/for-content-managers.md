@@ -1,15 +1,14 @@
 ---
 layout: page
-title: For content managers
+title:  "For content managers"
 lang: en
-permalink: /for-content-managers/
-trans_url: /content-managers-fr/
+permalink: "/for-content-managers/"
+trans_url: "/content-managers-fr/"
 ---
+
 This documentation reflects how [Airtable](/for-developers/#airtable) is configured to manage the content. Once your Airtable base is set up, you don't need to be a developer to update content.
 
 If you don't want to use Airtable to manage your content, [that's possible, too](/for-developers/#what-if-i-dont-want-to-use-airtable). The following steps won't apply if you don't use Airtable.  
-
-Our content managers take no shit from anyone.
 
 ### Changing text and links in the app
 
@@ -38,14 +37,14 @@ Our content managers take no shit from anyone.
 
 ### Changing the eligibility criteria for a benefit
 
-1. Navigate to the *benefitEligibility* table
-2. Each path is represented by values within columns which correspond to the questions in the *questions* table. The values which fill these columns correspond to values in the *multipleChoiceOptions* table.
+1. Navigate to the _benefitEligibility_ table
+2. Each path is represented by values within columns which correspond to the questions in the _questions_ table. The values which fill these columns correspond to values in the _multipleChoiceOptions_ table.
 3. Create a new row and add the benefit and the eligibility criteria.
 4. If you wish to remove an eligibility path from a benefit, delete the corresponding row in the table.
 
 ### Adding a category (aka need or checkbox question), associating it with a benefit
 
-1. Navigate to the *needs* table
+1. Navigate to the _needs_ table
 2. Add a new row at the bottom and give the category an english name and french name
 3. Select the cell under the benefits column and click `+`
 4. Start typing the names of the benefits you want the category to be associated with
@@ -54,10 +53,10 @@ To change the benefits associated with an existing category, click the "expand" 
 
 ### How to add multiple choice question and answers
 
-1. Navigate to the *questions* table
+1. Navigate to the _questions_ table
 2. Add a new row at the bottom, and give it a variable_name that describes the question (The multiple choice questions are ordered according to their order in the questions table, the needs checkbox question is always at the bottom).
 3. Fill in the following french and english content: question text that will appear in benefits-directory, question text in guided experience, and guided experience page title. The french/english column names can be found in the table above.
-4. Then navigate to the *multipleChoiceOptions* table
+4. Then navigate to the _multipleChoiceOptions_ table
 5. Add a new row for each multiple choice option you would like to appear under the new question.
 6. Give each option a variable_name that describes it, as well as the english/french text the user will see, and the blue breadcrumb text within the guided experience (see table above for column names).
 7. Select each "linked_question" cell, click +, and type/select the question variable_name you added in step 2.

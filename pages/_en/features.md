@@ -1,13 +1,12 @@
 ---
 layout: page
-title: Features
+title:  "Features"
 lang: en
-permalink: /features/
-trans_url: /fonctions/
+permalink: "/features/"
+trans_url: "/fonctions/"
 ---
-*Find benefits and services* can be divided into three elements: the guided experience, the benefits directory, and information for next steps. Note that the entire product is configurable and you can pick and choose which elements suit your needs.
 
-Prepare to have your mind blown by these killer features.
+*Find benefits and services* can be divided into three elements: the guided experience, the benefits directory, and information for next steps. Note that the entire product is configurable and you can pick and choose which elements suit your needs.
 
 ## The guided experience
 

@@ -3,8 +3,12 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 markdown: kramdown
 highlighter: rouge
 
+collections_dir: pages
 collections:
-  pages:
+  en:
+    output: true
+    permalink: /:title/
+  fr:
     output: true
     permalink: /:title/
 

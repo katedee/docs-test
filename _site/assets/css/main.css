@@ -261,6 +261,9 @@ header {
     padding: 2em 0;
 }
 
+img {
+    max-width: 100%;
+}
 
 /*
 Footer

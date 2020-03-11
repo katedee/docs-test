@@ -7,5 +7,10 @@
           <li><a href="{{ site.baseurl }}{{ menu[1].url }}">{{ menu[1].name }}</a></li>
       {% endfor %}
     </ul>
+    <ul>
+      {% for navPage in site[page.lang] %}
+        <li><a href="{{ site.baseurl }}{{ navPage.url }}">{{ navPage.title }}</a></li>
+      {% endfor %}
+    </ul>
   </nav>
 </aside>
