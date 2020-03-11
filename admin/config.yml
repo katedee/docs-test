@@ -54,6 +54,7 @@ collections:
         valueField: "title"
         displayFields: ["title"]
   - name: "menuOrder"
+    create: false
     label: "Menu Order"
     folder: "_menu"
     widget: "list"
