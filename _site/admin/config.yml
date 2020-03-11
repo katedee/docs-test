@@ -57,14 +57,18 @@ collections:
     create: false
     label: "Menu Order"
     folder: "_menu"
-    widget: "list"
-    fields: 
-      - name: "menuItem"
-        label: "menu item"
-        widget: "relation"
-        collection: "docEn"
-        searchFields: ["title"]
-        valueField: "title"
-        displayFields: ["title", "trans_url"]
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
+      - label: "Menu List"
+        name: "menuList"
+        widget: "list"
+        fields: 
+          - name: "menuItem"
+            label: "menu item"
+            widget: "relation"
+            collection: "docEn"
+            searchFields: ["title"]
+            valueField: "title"
+            displayFields: ["title", "trans_url"]
 
 
