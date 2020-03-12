@@ -2,8 +2,7 @@
 layout: page
 title:  "For developers"
 lang: en
-permalink: "/for-developers/"
-trans_url: "/technique/"
+trans_url: "Aperçu technique"
 ---
 
 {% if site.repos %}

@@ -2,8 +2,7 @@
 layout: page
 title:  "Contributing and open source"
 lang: en
-permalink: "/contributing/"
-trans_url: "/contribution/"
+trans_url: "Contribution et source ouverte"
 ---
 
 This product is an open source project with contributions from individuals and Government of Canada departments. We invite contributions to any part of the application, from people inside and outside government.

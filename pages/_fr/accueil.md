@@ -2,7 +2,6 @@
 layout: page
 title:  "Accueil"
 lang: fr
-permalink: "/accueil/"
-trans_url: "/home/"
+trans_url: "Accueil"
 ---
 {% include accueil.md %}
