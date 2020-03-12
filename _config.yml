@@ -11,6 +11,8 @@ collections:
   fr:
     output: true
     permalink: /:title/
+  menu:
+    output: false
 
 # Title
 name: Find benefits and services
