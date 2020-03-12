@@ -24,14 +24,15 @@ collections:
         valueField: "title"
         displayFields: ["title"]
         required: false
-      - label: "Select parent page"
-        hint: "If this is a subpage of another section, please choose which page it falls under"
-        name: "parentPage"
+      - label: "Select sub page(s)"
+        hint: "If there are any pages that are sub-sections of this one, select them here"
+        name: "childPages"
         widget: "relation"
         collection: "docEn"
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title"]
+        multiple: true
         required: false
   - name: "docFr"
     label: "Documentation - FR"
@@ -52,14 +53,15 @@ collections:
         valueField: "title"
         displayFields: ["title"]
         required: false
-      - label: "Select parent page"
-        hint: "If this is a subpage of another section, please choose which page it falls under"
-        name: "parentPage"
+      - label: "Select sub page(s)"
+        hint: "If there are any pages that are sub-sections of this one, select them here"
+        name: "childPages"
         widget: "relation"
-        collection: "docFr"
+        collection: "docEn"
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title"]
+        multiple: true
         required: false
   - name: "menuOrder"
     create: false
