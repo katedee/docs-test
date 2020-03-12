@@ -224,6 +224,11 @@ Navigation
   border-bottom: none;
 }
 
+.sub-link {
+    padding-left: 30px !important;
+    font-size: 1em !important;
+}
+
 
 /*
 Layout
