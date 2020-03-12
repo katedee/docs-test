@@ -6,7 +6,7 @@
       {% for navPage in site.menu %}
         {% for item in navPage.menuItems %}
           {% for sitePage in site[page.lang] %}
-            {% if sitePage.title == item.menuItem %}
+            {% if sitePage.title == item.menuItem or  sitePage.trans_url == item.menuItem %}
               <li><a href="{{ site.baseurl }}{{ sitePage.url }}">{{ sitePage.title }}</a></li>
             {% endif %}
           {% endfor %}

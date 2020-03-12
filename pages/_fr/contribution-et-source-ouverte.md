@@ -2,7 +2,7 @@
 layout: page
 title:  "Contribution et source ouverte"
 lang: fr
-trans_url: "Contributing"
+trans_url: "Contributing and open source"
 ---
 
 Le produti est un projet de source ouverte avec les contributions des personnes et des ministères du gouvernement du Canada. Nous invitons les contributions à n’importe quelle partie de l’application, de la part des personnes à l’intérieur et à l’extérieur du gouvernement.
