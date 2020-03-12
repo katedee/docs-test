@@ -2,6 +2,6 @@
 layout: page
 title:  "Accueil"
 lang: fr
-trans_url: "Accueil"
+trans_url: "Home"
 ---
 {% include accueil.md %}
