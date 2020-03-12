@@ -1,8 +1,11 @@
 ---
 layout: page
-title:  "For developers"
+title: For developers
 lang: en
-trans_url: "Aperçu technique"
+trans_url: Aperçu technique
+childPages:
+  - sub-page one
+  - Sub-page two
 ---
 
 {% if site.repos %}
