@@ -15,7 +15,8 @@ collections:
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Lang", name: "lang", widget: "hidden", default: "en"}
       - {label: "Body", name: "body", widget: "markdown", required: true}
-      - label: "Translation url"
+      - label: "French translation"
+        hint: "If you have the translation done, select the post here. Otherwise, you can come back and select it later"
         name: "trans_url"
         widget: "relation"
         collection: "docFr"
@@ -23,7 +24,8 @@ collections:
         valueField: "title"
         displayFields: ["title"]
         required: false
-      - label: "Parent page"
+      - label: "Select parent page"
+        hint: "If this is a subpage of another section, please choose which page it falls under"
         name: "parentPage"
         widget: "relation"
         collection: "docEn"
@@ -42,6 +44,7 @@ collections:
       - {label: "Lang", name: "lang", widget: "hidden", default: "fr"}
       - {label: "Corps du texte", name: "body", widget: "markdown", required: true}
       - label: "Traduction en anglais"
+        hint: "If you have the translation done, select the post here. Otherwise, you can come back and select it later"
         name: "trans_url"
         widget: "relation"
         collection: "docEn"
@@ -49,7 +52,8 @@ collections:
         valueField: "title"
         displayFields: ["title"]
         required: false
-      - label: "Parent page"
+      - label: "Select parent page"
+        hint: "If this is a subpage of another section, please choose which page it falls under"
         name: "parentPage"
         widget: "relation"
         collection: "docFr"
