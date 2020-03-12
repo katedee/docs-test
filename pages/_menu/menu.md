@@ -2,8 +2,8 @@
 title: Menu
 lang: en
 menuItems:
-  - menuItem: Home
-  - menuItem: For developers
-  - menuItem: Contributing and open source
   - menuItem: Contact
+  - menuItem: For developers
+  - menuItem: Home
+  - menuItem: Contributing and open source
 ---
