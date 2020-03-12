@@ -22,6 +22,7 @@ collections:
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title"]
+        required: false
       - label: "Parent page"
         name: "parentPage"
         widget: "relation"
@@ -29,6 +30,7 @@ collections:
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title"]
+        required: false
   - name: "docFr"
     label: "Documentation - FR"
     folder: "pages/_fr"
@@ -36,7 +38,7 @@ collections:
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Titre", name: "title", widget: "string", tagname: "h1", require: true}
+      - {label: "Titre", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Lang", name: "lang", widget: "hidden", default: "fr"}
       - {label: "Corps du texte", name: "body", widget: "markdown", required: true}
       - label: "Traduction en anglais"
@@ -46,6 +48,7 @@ collections:
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title"]
+        required: false
       - label: "Parent page"
         name: "parentPage"
         widget: "relation"
@@ -53,6 +56,7 @@ collections:
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title"]
+        required: false
   - name: "menuOrder"
     create: false
     label: "Menu Order"
